@@ -12,6 +12,12 @@ function printN2(n) {
     }
 };
 
+function printN3(n) {
+    new Array(n).fill(0).forEach((val, i) => {
+        setTimeout(() => console.log(i+1), 1000 * i);
+    })
+};
 
 
-printN2(5);
+
+printN3(5);
